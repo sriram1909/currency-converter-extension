@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(data => {
                 const rate = data.exchange_rate;
                 const resultPrice = amountTotal * rate;
-                result.innerHTML = `${amountTotal} USD= ${resultPrice.toFixed(2)} ${currencyTotal}`;
+                result.innerHTML = `${amountTotal} GBP= ${resultPrice.toFixed(2)} ${currencyTotal}`;
             })
             .catch(error => {
                 console.log('Request failed:', error);
